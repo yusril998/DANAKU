@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1027892090092",
+    "firebase_url": "https://danaku-8aac9.firebaseio.com",
+    "project_id": "danaku-8aac9",
+    "storage_bucket": "danaku-8aac9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027892090092:android:50997bc888c30ef37501c9",
+        "android_client_info": {
+          "package_name": "com.danaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027892090092-r5ng6vo8qsniohdo5ag62jalm5hnm3me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-cOEq8AG2PWH7-YCxkxnl-goJBlv7uzc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027892090092-r5ng6vo8qsniohdo5ag62jalm5hnm3me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
