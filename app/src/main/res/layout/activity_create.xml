@@ -65,23 +65,53 @@
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp"
                 app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:padding="10dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="306dp"
+                    android:layout_gravity="center"
                     android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:padding="10dp">
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/user"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/user" />
 
                         <EditText
+                            android:id="@+id/nama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="1"
+                            android:layout_column="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+
+                            android:hint="Masukkan nama lengkap"
+                            android:inputType="text"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/phonecall" />
+
+                        <EditText
+                            android:id="@+id/notelep"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -94,17 +124,20 @@
                             android:inputType="text"
                             android:textSize="15sp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/phonecall"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/perusahaan" />
 
                         <EditText
+                            android:id="@+id/kantor"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -113,20 +146,24 @@
                             android:layout_marginRight="10dp"
                             android:ems="10"
 
-                            android:hint="Masukkan no telepon"
+                            android:hint="Masukkan nama kantor"
                             android:inputType="text"
                             android:textSize="15sp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/perusahaan"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/email" />
+
                         <EditText
+                            android:id="@+id/email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -135,45 +172,25 @@
                             android:layout_marginRight="10dp"
                             android:ems="10"
 
-                            android:hint="Masukkan no telepon"
+                            android:hint="Masukkan no email"
                             android:inputType="text"
                             android:textSize="15sp" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/email"/>
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_row="1"
-                            android:layout_column="1"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="10dp"
-                            android:ems="10"
-
-                            android:hint="Masukkan no telepon"
-                            android:inputType="text"
-                            android:textSize="15sp" />
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
                             android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/alamat"/>
+                            android:src="@drawable/alamat" />
 
                         <EditText
+                            android:id="@+id/alamat"
                             android:layout_width="match_parent"
-
                             android:layout_height="129dp"
                             android:layout_row="1"
                             android:layout_column="2"
@@ -225,7 +242,7 @@
                             android:layout_height="20dp"
                             android:src="@drawable/facebook"/>
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/fb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -249,7 +266,7 @@
                             android:layout_height="20dp"
                             android:src="@drawable/instagram"/>
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/ig"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -272,7 +289,7 @@
                             android:layout_height="20dp"
                             android:src="@drawable/whatsapp"/>
                         <EditText
-                            android:id="@+id/editText2"
+                            android:id="@+id/wa"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -294,13 +311,19 @@
                             android:layout_width="20dp"
                             android:layout_height="20dp"
                             android:src="@drawable/youtube"/>
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
+                        <EditText
+                            android:id="@+id/yt"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:paddingLeft="20dp"
-                            android:text="William Snow Official Channel"/>
+                            android:layout_row="1"
+                            android:layout_column="1"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="10dp"
+                            android:ems="10"
+
+                            android:hint="Simpan"
+                            android:inputType="text"
+                            android:textSize="15sp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -313,6 +336,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
                 <LinearLayout
+                    android:id="@+id/simpan"
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -324,38 +348,15 @@
                         android:layout_width="35dp"
                         android:layout_height="35dp"
                         android:src="@drawable/edit"/>
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_row="1"
-                        android:layout_column="1"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"
-                        android:ems="10"
-
-                        android:hint="Masukkan no telepon"
-                        android:inputType="text"
-                        android:textSize="15sp" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_gravity="center"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_margin="10dp"
-                        android:layout_width="35dp"
-                        android:layout_height="35dp"
-                        android:src="@drawable/delete"/>
                     <TextView
                         android:textStyle="bold"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Hapus"/>
+                        android:paddingLeft="20dp"
+                        android:text="Simpan"/>
+
+
                 </LinearLayout>
 
             </LinearLayout>

@@ -1,5 +1,6 @@
 package com.danaku
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -20,14 +21,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
-        R.id.action_settings -> {
-            // User chose the "Settings" item, show the app settings UI...
-            true
-        }
+
 
         R.id.action_favorite -> {
-            // User chose the "Favorite" action, mark the current item
-            // as a favorite...
+            val intent = Intent(this, CreateActivity::class.java)
+// To pass any data to next activity
+            intent.putExtra("keyIdentifier", "value")
+// start your next activity
+            startActivity(intent)
             true
         }
 
