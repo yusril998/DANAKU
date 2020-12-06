@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
    >
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -56,7 +57,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textSize="20dp"
-                android:text="Data Diri"/>
+                android:text="Data Diri"
+                android:textColor="@android:color/black"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -93,10 +95,13 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan nama lengkap"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"
+                            />
                     </LinearLayout>
 
                     <LinearLayout
@@ -111,7 +116,7 @@
                             android:src="@drawable/phonecall" />
 
                         <EditText
-                            android:id="@+id/notelep"
+                            android:id="@+id/notelp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
@@ -119,10 +124,12 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan no telepon"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -145,10 +152,12 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan nama kantor"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -171,10 +180,13 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
+
 
                             android:hint="Masukkan no email"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
 
                     <LinearLayout
@@ -198,12 +210,15 @@
                             android:layout_marginRight="10dp"
                             android:ems="10"
                             android:gravity="top"
+                            android:textColorHint="@android:color/darker_gray"
 
-                            android:hint="Masukkan no telepon"
+
+                            android:hint="Masukkan alamat"
                             android:inputType="text"
                             android:lines="5"
                             android:singleLine="false"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -216,7 +231,8 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textSize="20dp"
-                android:text="Sosial Media"/>
+                android:text="Sosial Media"
+                android:textColor="@android:color/black"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -250,10 +266,12 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
-                            android:hint="Masukkan no telepon"
+                            android:hint="Masukan nama facebook"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
 
                     </LinearLayout>
                     <LinearLayout
@@ -270,14 +288,17 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_row="1"
+                            android:shadowColor="@android:color/black"
                             android:layout_column="1"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
-                            android:hint="Masukkan no telepon"
+                            android:hint="Masukkan instagram"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
                     <LinearLayout
                         android:orientation="horizontal"
@@ -297,34 +318,14 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:textColorHint="@android:color/darker_gray"
 
-                            android:hint="Masukkan no telepon"
+                            android:hint="Masukkan Whatsaap"
                             android:inputType="text"
-                            android:textSize="15sp" />
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black"/>
                     </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/youtube"/>
-                        <EditText
-                            android:id="@+id/yt"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_row="1"
-                            android:layout_column="1"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginRight="10dp"
-                            android:ems="10"
 
-                            android:hint="Simpan"
-                            android:inputType="text"
-                            android:textSize="15sp" />
-                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -337,30 +338,29 @@
                 android:layout_height="wrap_content">
                 <LinearLayout
                     android:id="@+id/simpan"
-                    android:layout_width="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_gravity="center"
                     android:gravity="center">
                     <ImageView
-                        android:layout_margin="10dp"
                         android:layout_width="35dp"
                         android:layout_height="35dp"
-                        android:src="@drawable/edit"/>
+                        android:src="@drawable/edit"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"/>
                     <TextView
                         android:textStyle="bold"
-                        android:layout_gravity="center_vertical"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
-                        android:text="Simpan"/>
-
+                        android:text="Simpan"
+                        android:textColor="@android:color/black"/>
 
                 </LinearLayout>
-
             </LinearLayout>
-
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
