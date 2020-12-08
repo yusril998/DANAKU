@@ -95,6 +95,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan nama lengkap"
@@ -124,6 +125,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan no telepon"
@@ -152,6 +154,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan nama kantor"
@@ -180,6 +183,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
 
@@ -203,15 +207,15 @@
                         <EditText
                             android:id="@+id/alamat"
                             android:layout_width="match_parent"
-                            android:layout_height="129dp"
+                            android:layout_height="120dp"
                             android:layout_row="1"
                             android:layout_column="2"
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
                             android:gravity="top"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
-
 
                             android:hint="Masukkan alamat"
                             android:inputType="text"
@@ -266,6 +270,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukan nama facebook"
@@ -293,6 +298,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan instagram"
@@ -318,6 +324,7 @@
                             android:layout_marginLeft="20dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:backgroundTint="@android:color/primary_text_light"
                             android:textColorHint="@android:color/darker_gray"
 
                             android:hint="Masukkan Whatsaap"
