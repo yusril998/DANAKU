@@ -12,6 +12,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@android:color/white"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
@@ -46,7 +47,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Wiliam Snoe"
-                            android:textColor="@color/colorPrimary"
+                            android:id="@+id/nama"
+                            android:textColor="@android:color/black"
                             android:textStyle="bold"
                             android:textSize="21sp"/>
                         <View
@@ -64,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
                 android:textSize="20dp"
+                android:textColor="@android:color/black"
                 android:text="Data Diri"/>
 
             <androidx.cardview.widget.CardView
@@ -90,10 +93,12 @@
                             android:src="@drawable/phonecall"/>
                         <TextView
                             android:textStyle="bold"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:id="@+id/notlp"
                             android:text="08788177171771"/>
                     </LinearLayout>
                     <LinearLayout
@@ -107,10 +112,12 @@
                             android:src="@drawable/perusahaan"/>
                         <TextView
                             android:textStyle="bold"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:id="@+id/perusahaan"
                             android:text="PT Gojek indonesia"/>
                     </LinearLayout>
                     <LinearLayout
@@ -124,10 +131,12 @@
                             android:src="@drawable/email"/>
                         <TextView
                             android:textStyle="bold"
+                            android:textColor="@android:color/black"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:id="@+id/email"
                             android:text="Wiliam@gmail.com"/>
                     </LinearLayout>
                     <LinearLayout
@@ -145,6 +154,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:id="@+id/alamat"
                             android:text="jalan muharto raya no 10 malang jawa timut"/>
                     </LinearLayout>
 
@@ -157,6 +168,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="20dp"
+                android:textColor="@android:color/black"
                 android:textSize="20dp"
                 android:text="Sosial Media"/>
 
@@ -185,10 +197,12 @@
                             android:src="@drawable/facebook"/>
                         <TextView
                             android:textStyle="bold"
+                            android:id="@+id/fb"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
                             android:text="William Snoe"/>
                     </LinearLayout>
                     <LinearLayout
@@ -202,10 +216,12 @@
                             android:src="@drawable/instagram"/>
                         <TextView
                             android:textStyle="bold"
+                            android:id="@+id/ig"
                             android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
                             android:text="William Snoe official"/>
                     </LinearLayout>
                     <LinearLayout
@@ -223,24 +239,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingLeft="20dp"
+                            android:id="@+id/wa"
+                            android:textColor="@android:color/black"
                             android:text="08655141441441"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/youtube"/>
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="20dp"
-                            android:text="William Snow Official Channel"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -255,6 +256,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
+                    android:id="@+id/edit"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_gravity="center"
@@ -267,6 +269,7 @@
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center"
+                        android:textColor="@android:color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Edit"/>
@@ -274,6 +277,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_weight="1"
+                    android:id="@+id/hapus"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_gravity="center"
@@ -281,11 +285,13 @@
                     <ImageView
                         android:layout_margin="10dp"
                         android:layout_width="35dp"
+
                         android:layout_height="35dp"
                         android:src="@drawable/delete"/>
                     <TextView
                         android:textStyle="bold"
                         android:layout_gravity="center"
+                        android:textColor="@android:color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hapus"/>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#464545"
+    android:background="@android:color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity">
 <LinearLayout
@@ -21,14 +22,14 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
 
-        android:tint="@android:color/white"
+        android:tint="#adadad"
 
         />
     <TextView
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
         android:id="@+id/text"
-        android:textColor="#fff"
+        android:textColor="#adadad"
         android:gravity="center"
         android:text="DanaKU.com"
         android:textStyle="bold"
@@ -39,7 +40,8 @@
     <ProgressBar
         android:layout_below="@id/text"
         android:layout_centerHorizontal="true"
-
+android:outlineSpotShadowColor="#adadad"
+        android:outlineAmbientShadowColor="#adadad"
         android:padding="6dp"
         android:layout_width="45dp"
         android:layout_height="45dp" />

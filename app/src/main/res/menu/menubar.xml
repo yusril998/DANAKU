@@ -5,6 +5,6 @@
     <item
         android:id="@+id/action_favorite"
         android:icon="@drawable/add"
-        android:title="hhhhh"
-        app:showAsAction="never"/>
+        android:title="add"
+        app:showAsAction="ifRoom"/>
 </menu>
