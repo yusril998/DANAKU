@@ -25,18 +25,20 @@
         android:tint="#adadad"
 
         />
+
     <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="20dp"
-        android:id="@+id/text"
-        android:textColor="#adadad"
+        android:fontFamily="@font/asap_bold_italic"
         android:gravity="center"
         android:text="DanaKU.com"
-        android:textStyle="bold"
+        android:textColor="#673AB7"
         android:textSize="40dp"
-        android:layout_below="@id/image"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textStyle="bold" />
     <ProgressBar
         android:layout_below="@id/text"
         android:layout_centerHorizontal="true"

@@ -26,14 +26,14 @@
         android:layout_gravity="center_vertical"
         android:orientation="vertical"
         android:layout_margin="6dp">
+
         <TextView
+            android:id="@+id/namalengkap"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/namalengkap"
             android:text="Nama Lengkap"
-            android:textColor="#adadad"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textColor="#2E2E2E"
+            android:textSize="20sp" />
 
     </LinearLayout>
 

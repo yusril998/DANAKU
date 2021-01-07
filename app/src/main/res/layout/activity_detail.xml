@@ -20,46 +20,35 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
-                app:cardUseCompatPadding="true">
-                <RelativeLayout
+                app:cardCornerRadius="0dp"
+                app:cardElevation="7dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/gradient_bg"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
                     <ImageView
-                        android:src="@drawable/bg"
-                        android:layout_width="match_parent"
+                        android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:scaleType="centerCrop" />
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/person" />
+
+                    <TextView
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
-                        <ImageView
-                            android:layout_marginTop="45dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:src="@drawable/person"/>
-                        <TextView
-                            android:layout_marginTop="10dp"
-                            android:layout_gravity="center_horizontal"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Wiliam Snoe"
-                            android:id="@+id/nama"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold"
-                            android:textSize="21sp"/>
-                        <View
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"/>
-                    </LinearLayout>
-
-                </RelativeLayout>
-
+                        android:layout_gravity="center_horizontal"
+                        android:text="Wiliam Snoe"
+                        android:textColor="@android:color/white"
+                        android:textSize="21sp" />
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
             <TextView
+                android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
@@ -74,89 +63,102 @@
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
+                app:cardElevation="7dp"
                 app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:padding="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:padding="10dp">
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/phonecall"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/phonecall" />
+
                         <TextView
-                            android:textStyle="bold"
-                            android:textColor="@android:color/black"
-                            android:layout_gravity="center_vertical"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="20dp"
                             android:id="@+id/notlp"
-                            android:text="08788177171771"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/perusahaan"/>
-                        <TextView
-                            android:textStyle="bold"
-                            android:textColor="@android:color/black"
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
+                            android:text="08788177171771"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/perusahaan" />
+
+                        <TextView
                             android:id="@+id/perusahaan"
-                            android:text="PT Gojek indonesia"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/email"/>
-                        <TextView
-                            android:textStyle="bold"
-                            android:textColor="@android:color/black"
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
+                            android:text="PT Gojek indonesia"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/email" />
+
+                        <TextView
                             android:id="@+id/email"
-                            android:text="Wiliam@gmail.com"/>
-                    </LinearLayout>
-                    <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <ImageView
-                            android:layout_margin="10dp"
-                            android:layout_width="20dp"
-                            android:layout_height="20dp"
-                            android:src="@drawable/alamat"/>
-                        <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
+                            android:text="Wiliam@gmail.com"
                             android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/alamat" />
+
+                        <TextView
                             android:id="@+id/alamat"
-                            android:text="jalan muharto raya no 10 malang jawa timut"/>
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingLeft="20dp"
+                            android:text="jalan muharto raya no 10 malang jawa timut"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -177,71 +179,80 @@
                 android:layout_height="wrap_content"
                 app:cardBackgroundColor="@android:color/white"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="10dp"
+                app:cardElevation="7dp"
                 app:cardUseCompatPadding="true">
+
                 <LinearLayout
-                    android:padding="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:orientation="vertical"
-                    android:layout_gravity="center">
+                    android:padding="10dp">
 
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/facebook"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/facebook" />
+
                         <TextView
-                            android:textStyle="bold"
                             android:id="@+id/fb"
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
+                            android:text="William Snoe"
                             android:textColor="@android:color/black"
-                            android:text="William Snoe"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/instagram"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/instagram" />
+
                         <TextView
-                            android:textStyle="bold"
                             android:id="@+id/ig"
-                            android:layout_gravity="center_vertical"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
+                            android:text="William Snoe official"
                             android:textColor="@android:color/black"
-                            android:text="William Snoe official"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
+
                     <LinearLayout
-                        android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
                         <ImageView
-                            android:layout_margin="10dp"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
-                            android:src="@drawable/whatsapp"/>
+                            android:layout_margin="10dp"
+                            android:src="@drawable/whatsapp" />
+
                         <TextView
-                            android:textStyle="bold"
-                            android:layout_gravity="center_vertical"
+                            android:id="@+id/wa"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
                             android:paddingLeft="20dp"
-                            android:id="@+id/wa"
+                            android:text="08655141441441"
                             android:textColor="@android:color/black"
-                            android:text="08655141441441"/>
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </LinearLayout>
